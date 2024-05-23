@@ -22,6 +22,8 @@
 		8C9CFE822BFF8AD200726AF0 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9CFE812BFF8AD200726AF0 /* AuthenticationView.swift */; };
 		8C9CFE842BFF8C2900726AF0 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9CFE832BFF8C2900726AF0 /* SignInEmailView.swift */; };
 		8C9CFE862BFF93E300726AF0 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9CFE852BFF93E300726AF0 /* AuthenticationManager.swift */; };
+		8C9CFE882BFFA6D600726AF0 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9CFE872BFFA6D600726AF0 /* RootView.swift */; };
+		8C9CFE8A2BFFAE3B00726AF0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9CFE892BFFAE3B00726AF0 /* SettingsView.swift */; };
 		8CD462392AA6C64A00F8AD8F /* mainCameraFuction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD462382AA6C64A00F8AD8F /* mainCameraFuction.swift */; };
 		8CE77F932AAB8B1B00F9DA08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CE77F922AAB8B1B00F9DA08 /* GoogleService-Info.plist */; };
 		8CE77F962AAB8BC700F9DA08 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8CE77F952AAB8BC700F9DA08 /* FirebaseAnalytics */; };
@@ -75,6 +77,8 @@
 		8C9CFE812BFF8AD200726AF0 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		8C9CFE832BFF8C2900726AF0 /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
 		8C9CFE852BFF93E300726AF0 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		8C9CFE872BFFA6D600726AF0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		8C9CFE892BFFAE3B00726AF0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		8CD462382AA6C64A00F8AD8F /* mainCameraFuction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainCameraFuction.swift; sourceTree = "<group>"; };
 		8CE77F922AAB8B1B00F9DA08 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CF997B82AA5546C00ACAA50 /* CameraViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewOne.swift; sourceTree = "<group>"; };
@@ -209,8 +213,10 @@
 		8C9CFE802BFF8AA200726AF0 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				8C9CFE872BFFA6D600726AF0 /* RootView.swift */,
 				8C9CFE812BFF8AD200726AF0 /* AuthenticationView.swift */,
 				8C9CFE832BFF8C2900726AF0 /* SignInEmailView.swift */,
+				8C9CFE892BFFAE3B00726AF0 /* SettingsView.swift */,
 				8C9CFE852BFF93E300726AF0 /* AuthenticationManager.swift */,
 			);
 			path = Authentication;
@@ -305,7 +311,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					8C3EE52C2A9433060095D2BF = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -392,9 +398,11 @@
 				8C3EE5332A9433060095D2BF /* ContentView.swift in Sources */,
 				8C9CFE842BFF8C2900726AF0 /* SignInEmailView.swift in Sources */,
 				8C3EE5312A9433060095D2BF /* KeepUp_App.swift in Sources */,
+				8C9CFE882BFFA6D600726AF0 /* RootView.swift in Sources */,
 				8CF997C32AA55DCC00ACAA50 /* CameraViewSixth.swift in Sources */,
 				8CF997C52AA55DD200ACAA50 /* CameraViewSeventh.swift in Sources */,
 				8C9CFE822BFF8AD200726AF0 /* AuthenticationView.swift in Sources */,
+				8C9CFE8A2BFFAE3B00726AF0 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +475,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -527,6 +536,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
