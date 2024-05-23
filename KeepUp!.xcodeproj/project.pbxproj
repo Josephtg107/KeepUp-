@@ -18,6 +18,10 @@
 		8C3EE54C2A9433070095D2BF /* KeepUp_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3EE54B2A9433070095D2BF /* KeepUp_UITests.swift */; };
 		8C3EE54E2A9433070095D2BF /* KeepUp_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3EE54D2A9433070095D2BF /* KeepUp_UITestsLaunchTests.swift */; };
 		8C3EE55B2A94331D0095D2BF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3EE55A2A94331D0095D2BF /* Launch Screen.storyboard */; };
+		8C9CFE7F2BFF8A5700726AF0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8C9CFE7E2BFF8A5700726AF0 /* FirebaseAuth */; };
+		8C9CFE822BFF8AD200726AF0 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9CFE812BFF8AD200726AF0 /* AuthenticationView.swift */; };
+		8C9CFE842BFF8C2900726AF0 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9CFE832BFF8C2900726AF0 /* SignInEmailView.swift */; };
+		8C9CFE862BFF93E300726AF0 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9CFE852BFF93E300726AF0 /* AuthenticationManager.swift */; };
 		8CD462392AA6C64A00F8AD8F /* mainCameraFuction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD462382AA6C64A00F8AD8F /* mainCameraFuction.swift */; };
 		8CE77F932AAB8B1B00F9DA08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CE77F922AAB8B1B00F9DA08 /* GoogleService-Info.plist */; };
 		8CE77F962AAB8BC700F9DA08 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8CE77F952AAB8BC700F9DA08 /* FirebaseAnalytics */; };
@@ -68,6 +72,9 @@
 		8C3EE54B2A9433070095D2BF /* KeepUp_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepUp_UITests.swift; sourceTree = "<group>"; };
 		8C3EE54D2A9433070095D2BF /* KeepUp_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepUp_UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8C3EE55A2A94331D0095D2BF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		8C9CFE812BFF8AD200726AF0 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		8C9CFE832BFF8C2900726AF0 /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
+		8C9CFE852BFF93E300726AF0 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		8CD462382AA6C64A00F8AD8F /* mainCameraFuction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainCameraFuction.swift; sourceTree = "<group>"; };
 		8CE77F922AAB8B1B00F9DA08 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CF997B82AA5546C00ACAA50 /* CameraViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewOne.swift; sourceTree = "<group>"; };
@@ -88,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CE77F9A2AAB8BC700F9DA08 /* FirebaseDatabaseSwift in Frameworks */,
+				8C9CFE7F2BFF8A5700726AF0 /* FirebaseAuth in Frameworks */,
 				8CE77F9C2AAB8BC700F9DA08 /* FirebaseStorage in Frameworks */,
 				8CE77F982AAB8BC700F9DA08 /* FirebaseDatabase in Frameworks */,
 				8CE77F962AAB8BC700F9DA08 /* FirebaseAnalytics in Frameworks */,
@@ -127,6 +135,7 @@
 				8C3EE5402A9433070095D2BF /* KeepUp!Tests */,
 				8C3EE54A2A9433070095D2BF /* KeepUp!UITests */,
 				8C3EE52E2A9433060095D2BF /* Products */,
+				8C9CFE7D2BFF8A5600726AF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +155,7 @@
 				8C3EE55A2A94331D0095D2BF /* Launch Screen.storyboard */,
 				8C3EE5302A9433060095D2BF /* KeepUp_App.swift */,
 				8C3EE5322A9433060095D2BF /* ContentView.swift */,
+				8C9CFE802BFF8AA200726AF0 /* Authentication */,
 				8C3EE55E2A94347E0095D2BF /* Navigation */,
 				8CF997B52AA5545A00ACAA50 /* Camera */,
 				8C3EE5342A9433070095D2BF /* Assets.xcassets */,
@@ -189,6 +199,23 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		8C9CFE7D2BFF8A5600726AF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C9CFE802BFF8AA200726AF0 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				8C9CFE812BFF8AD200726AF0 /* AuthenticationView.swift */,
+				8C9CFE832BFF8C2900726AF0 /* SignInEmailView.swift */,
+				8C9CFE852BFF93E300726AF0 /* AuthenticationManager.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		8CF997B52AA5545A00ACAA50 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +255,7 @@
 				8CE77F972AAB8BC700F9DA08 /* FirebaseDatabase */,
 				8CE77F992AAB8BC700F9DA08 /* FirebaseDatabaseSwift */,
 				8CE77F9B2AAB8BC700F9DA08 /* FirebaseStorage */,
+				8C9CFE7E2BFF8A5700726AF0 /* FirebaseAuth */,
 			);
 			productName = "KeepUp!";
 			productReference = 8C3EE52D2A9433060095D2BF /* KeepUp!.app */;
@@ -360,10 +388,13 @@
 				8CF997C92AA55DE200ACAA50 /* CameraViewNinth.swift in Sources */,
 				8CF997C72AA55DD800ACAA50 /* CameraViewEight.swift in Sources */,
 				8CF997C12AA55DC500ACAA50 /* CameraViewFifth.swift in Sources */,
+				8C9CFE862BFF93E300726AF0 /* AuthenticationManager.swift in Sources */,
 				8C3EE5332A9433060095D2BF /* ContentView.swift in Sources */,
+				8C9CFE842BFF8C2900726AF0 /* SignInEmailView.swift in Sources */,
 				8C3EE5312A9433060095D2BF /* KeepUp_App.swift in Sources */,
 				8CF997C32AA55DCC00ACAA50 /* CameraViewSixth.swift in Sources */,
 				8CF997C52AA55DD200ACAA50 /* CameraViewSeventh.swift in Sources */,
+				8C9CFE822BFF8AD200726AF0 /* AuthenticationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +556,8 @@
 				DEVELOPMENT_TEAM = 2C32G7LR87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "KeepUp!";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to capture photos.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app will use the microphone when the camera is active.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -533,6 +566,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -543,6 +577,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -560,6 +595,8 @@
 				DEVELOPMENT_TEAM = 2C32G7LR87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "KeepUp!";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to capture photos.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app will use the microphone when the camera is active.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -568,6 +605,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -578,6 +616,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -713,6 +752,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8C9CFE7E2BFF8A5700726AF0 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CE77F942AAB8BC700F9DA08 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
 		8CE77F952AAB8BC700F9DA08 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8CE77F942AAB8BC700F9DA08 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
